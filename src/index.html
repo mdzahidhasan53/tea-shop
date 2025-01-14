@@ -3,45 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea house</title>
+    <title>Friend tea house</title>
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script -->
-     <link href="./output.css" rel="stylesheet">
-     <!-- google fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-        <style>
-    .font-manrope {
-    font-family: "Manrope", serif;
-    }
-     </style>
+<script src="https://cdn.tailwindcss.com"></script>
 
-     <!-- custom color -->
-     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+<!-- google fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+<!-- font family -->
+
+<style>
+.font-manrope {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+</style>
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/a170798c32.js" crossorigin="anonymous"></script>
+<!-- custom css -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
 
 </head>
 <body class="font-manrope">
-    <header>
-        <h1 class="text-3xl text-red-500">This is Header</h1>
-    </header>
+    <header class="container mx-auto">
+        <div class="hero min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div>
+                <img
+                src="/images/banner.png"
+                class=""/>
+                <div class=" shadow-lg bg-white w-[255px] h-[100px] flex justify-center items-center rounded-md -mt-20 ms-20 ">
+                  <i class="fa-solid fa-star text-amber-400 text-4xl"></i>
+                  <div class="ms-4">
+                    <h3 class="text-3xl font-semibold ">5.00</h3>
+                    <p>Trust pilot ratings</p>
+                  </div>
+                </div>
+              </div>
 
+              <div>
+                <h1 class="text-5xl font-bold">It's good <br>
+                  tea time at The <br> Tea House</h1>
+                <p class="py-6">
+                  Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                </p>
+                <button class="btn btn-primary">Explore me</button>
+              </div>
+            </div>
+          </div>
+    </header>
     <main>
-        <h2 class="text-3xl text-red-500">This is main section</h2>
+
     </main>
-        
-    <footer>
-        <h2 class="text-3xl text-red-500">This is Footer</h2>
-    </footer>
+
 </body>
 </html>
