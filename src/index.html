@@ -34,6 +34,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            purple: '#3f3cbb',
           }
         }
       }
@@ -42,7 +43,13 @@
 
 </head>
 <body class="font-manrope">
-    <header class="container mx-auto">
+    <header class="">
+      <nav class="">
+        <div class="navbar bg-base-300 flex justify-around">
+          <img src="/images/icon.png" alt="" class="h-[80px] w-[80px]">
+          <button class="btn btn-ghost text-2xl font-bold">Friends tea house</button>
+        </div>
+      </nav>
         <div class="hero min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse">
               <div>
@@ -58,19 +65,78 @@
                 </div>
               </div>
 
-              <div>
+              <div class="">
                 <h1 class="text-5xl font-bold">It's good <br>
                   tea time at The <br> Tea House</h1>
                 <p class="py-6">
                   Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                 </p>
-                <button class="btn btn-primary">Explore me</button>
+                <button class="btn btn-warning">Explore me</button>
               </div>
             </div>
           </div>
     </header>
-    <main>
+    <main class="mt-14">
+      <section class="text-center">
+        <!--  Featured Products -->
+          <h3 class="text-5xl font-extrabold">Our Featured Products</h3>
+          <p class="mt-5-4 w-[900px] mx-auto my-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        <div class="grid grid-cols-4 gap-3 w-4/5 mx-auto">
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="/images/tea-1.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Milk Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+              
+            </div>
+          </div>
 
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="/images/tea-2.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Black Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+              
+            </div>
+          </div>
+
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="/images/tea-3.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Lemon Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+              
+            </div>
+          </div>
+
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="/images/tea-4.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body ">
+              <div class="flex flex-col items-center">
+                <h2 class="card-title">Orange Tea</h2>
+                <p class="w-[208px]">Creamer could be replaced by fresh milk</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      
     </main>
 
 </body>
